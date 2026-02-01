@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 const userValidators = require("../validators/user.validators");
-const User = require("../models/User.model");
+const User = require("../models/user.model");
 
 const getRegisterPage = async (req, res) => {
   res.render("register");
