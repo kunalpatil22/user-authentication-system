@@ -40,7 +40,7 @@ A complete User Authentication Web Application built with **Node.js, Express.js 
 
 ## Live Demo
 
-Coming soon
+**URL**: https://user-authentication-system-ud4m.onrender.com/
 
 ## Setup for local installation
 
