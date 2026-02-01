@@ -1,0 +1,13 @@
+<nav id="navbar">
+    <div class="container">
+        <a id="navbar-brand" href="/">User Authentication System</a>
+        <ul id="nav-items">
+        <% if(!locals.user) { %>
+            <li><a class="nav-link" href="/login">Login</a></li>
+            <li><a class="nav-link" href="/register">Register</a></li>
+        <% } else { %>
+            <li><a class="nav-link" href="/logout" style="color: red;">logout</a></li>
+        <% } %> 
+    </ul>
+  </div>
+</nav>

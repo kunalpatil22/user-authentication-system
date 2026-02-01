@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>User Authentication System | Register</title>
+  </head>
+  <body>
+    <%- include('partials/navbar') %>
+    <main>
+      <div class="container">
+        <section id="auth">
+          <h1 id="auth-title">Register</h1>
+          <form id="auth-form" action="/register" method="post">
+            <% if(locals.error_message) { %>
+            <div id="error-message-box">
+                <p><%= error_message %></p>
+            </div>
+            <% } %>
+            <div>
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" required />
+            </div>
+            <div>
+              <label for="repeat_password">Repeat Password</label>
+              <input
+                type="password"
+                name="repeat_password"
+                id="repeat_password"
+                required />
+            </div>
+            <input type="submit" value="Register" />
+            <a href="/login">Already have an account? Login.</a>
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

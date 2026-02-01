@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>User Authentication System | Login</title>
+  </head>
+  <body>
+    <%- include('partials/navbar') %>
+    <main>
+      <div class="container">
+      <section id="auth">
+        <h1 id="auth-title">Login</h1>
+        <form id="auth-form" action="/login" method="post">
+            <% if(locals.error_message) { %>
+            <div id="error-message-box">
+                <p><%= error_message %></p>
+            </div>
+            <% } %>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required />
+            </div>
+            <input type="submit" value="Login" />
+            <a href="/register">Don't have an account? Register.</a>
+        </form>
+      </section>
+      </div>
+    </main>
+  </body>
+</html>

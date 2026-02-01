@@ -1,0 +1,22 @@
+{
+  "name": "user-authentication-system",
+  "version": "1.0.0",
+  "description": "A token-based user authentication system made with Node.js, Express, MongoDB and JWT.",
+  "license": "MIT",
+  "author": "Kunal Patil",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --env-file=.env .",
+    "dev": "node --env-file=.env --watch ."
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "ejs": "^4.0.1",
+    "express": "^5.2.1",
+    "joi": "^18.0.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.1.5"
+  }
+}

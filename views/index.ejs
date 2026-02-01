@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>User Authentication System | Home</title>
+  </head>
+  <body>
+    <%- include('partials/navbar') %>
+    <main>
+      <div class="container">
+        <section id="welcome">
+          <h2>Welcome, <%= user.name %>!</h2>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
